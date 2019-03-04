@@ -1,0 +1,41 @@
+.index { padding: 50px 0; }
+.index-flash { position: fixed; top: 20px; right: 20px; max-height: 400px; width: 260px; -webkit-perspective: 400px; perspective: 400px; z-index: 200; }
+.index-attach { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 15px; }
+.index-block { width: 100%; display: inline-block; vertical-align: top; padding: 25px 0; }
+
+.index-tools-btn { margin-right: 15px; }
+.index-tools-stats { display: inline-block; }
+
+/* Статистика */
+.index-stats { text-align: center; }
+.index-stats__item { width: 100%; padding: 15px 10px; background-color: #f9f9f9; display: inline-block; }
+.index-stats__count { font-size: 40px; line-height: 1; font-weight: 700; margin-bottom: 10px; }
+.index-stats__label { font-size: 12px; color:#ccc; }
+
+/* Список блоков */
+.index-list__item { width: 33%; float: left; margin-bottom: 20px; }
+
+
+/* Форма добавления */
+.index-form { width: 100%; box-shadow: 0 2px 5px rgba(0,0,0,.2); padding: 15px 25px; }
+.index-form__title { font-size: 22px; font-weight: 700; margin-bottom: 15px; }
+.index-form__case { width: 100%; display: inline-block; vertical-align: top; margin-bottom: 20px; }
+.index-form__case label { width: 100%; display: inline-block; vertical-align: top; font-size: 14px; margin-bottom: 5px; color:#ccc; }
+
+
+
+
+@media screen and (max-width:767px) {
+	.index-stats { margin: -10px 0;}
+	.index-stats__item { margin: 10px 0; }
+}
+
+
+@media screen and (max-width:479px) {
+	.index { padding: 0;}
+	.index-stats__item { padding: 10px; display: flex; flex-direction: row-reverse; justify-content: flex-end; }
+	.index-stats__count { line-height: 20px; font-size: 16px; margin-bottom: 0; }
+	.index-stats__label { line-height: 20px; margin-right: 5px; }
+}
+
+
